@@ -26,3 +26,7 @@ let StringsomeNumber=String(someNumber)
 console.log(typeof StringsomeNumber);
 
 
+//****************** Operations*************** */
+
+
+
