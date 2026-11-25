@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Table Booking</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: #f8f9fa;
+        }
+        .booking-container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        .btn-custom {
+            background: #ff5722;
+            color: white;
+        }
+        .btn-custom:hover {
+            background: #e64a19;
+        }
+
+        .footer-book{
+    position: relative;
+    width: 100%;
+    margin-top: 0;
+    padding: 40px 20px;
+    background-color:  #0e2a47;;
+    color: white;
+
+}
+
+@media (max-width: 768px){
+  /* Photo aur Text ko ek ke neeche ek kar do */
+  .row{
+    flex-direction: column !important;
+    display: flex !important;
+  }
+  .row > div{
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: none !important;
+    padding: 10px 15px !important;
+    text-align: center !important;
+  }
+  /* Photo ko pura chauda kar do */
+  .row img{
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 auto !important;
+  }
+  /* Text ko bada aur saaf kar do */
+  .row p, .row h2, .row h3{
+    text-align: center !important;
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+  }
+  .row h2{
+    font-size: 24px !important;
+  }
+}
+
+    </style>
+</head>
+
+<body>
+
+
+        <header id="site-header">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #f87f34;">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+         <img  src="https://cdn5.vectorstock.com/i/thumb-large/79/79/menu-restaurant-design-vector-16307979.jpg"
+          style="height: 40px; width:40px;border-radius: 50%;object-fit: cover;" class="about" ></a>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav  mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="HomePage.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About</a>
+              </li>
+               <li class="nav-item">
+              <a class="nav-link" href="Gallery.html">Gallery</a>
+              </li>
+              </ul>
+              </div>
+              </div>
+              </nav>
+             </header>
+    <div class="booking-container" style="margin-top: 100px;padding-top: 20;">
+        <h2 class="text-center mb-4">Restaurant Table Booking</h2>
+
+        <form>
+            <div class="mb-3">
+                <label class="form-label">Full Name</label>
+                <input type="text" class="form-control" placeholder="Enter your name" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Date</label>
+                <input type="date" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Time</label>
+                <input type="time" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Number of People</label>
+                <input type="number" class="form-control" min="1" max="20" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Special Requests</label>
+                <textarea class="form-control" rows="3" placeholder="Birthday setup, window seat, etc."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-custom w-100">Book Table</button>
+           
+        </form>
+         
+    </div>
+
+    <footer class="footer-book" id="site-footer">
+        <!-- <div class="bg-success bg-opacity-25 py-5"> -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-xl-3 col-sm-12">
+            <h5 class="pb-3"><i class="fa-solid fa-user-group pe-1"></i> About us</h5>
+            <span class="text-secondary">This is a wider card with supporting text below as a natural lead-in to additional content.</span>
+          </div>
+          <div class="col-md-6 col-xl-3 col-sm-12">
+            <h5 class="pb-3"><i class="fa-solid fa-link pe-1"></i> Important links</h5>
+            <ul>
+              <li><a href="#" class="text-decoration-none link-secondary">About us</a></li>
+              <li><a href="#" class="text-decoration-none link-secondary">Privacy policy</a></li>
+              <li><a href="#" class="text-decoration-none link-secondary">Terms of services</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-xl-3 col-sm-12">
+            <h5 class="pb-3"><i class="fa-solid fa-location-dot pe-1"></i> Our location</h5>
+            <span class="text-secondary">
+              Milannagar bazar<br>
+              Tamluk, East Medinipore, West Bengal<br>
+              720001, India<br>
+            </span>
+          </div>
+          <div class="col-md-6 col-xl-3 col-sm-12">
+            <h5 class="pb-3"><i class="fa-solid fa-paper-plane pe-1"></i> Stay updated</h5>
+            <form>
+              <input type="text" class="w-100 mb-2 form-control" name="" placeholder="Email ID">
+              <button class="w-100 btn btn-dark">Subscribe now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-dark py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item"><a class="btn btn-outline-secondary" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li class="list-inline-item"><a class="btn btn-outline-secondary" href="#"><i class="fa-brands fa-youtube"></i></a></li>
+              <li class="list-inline-item"><a class="btn btn-outline-secondary" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+              <li class="list-inline-item"><a class="btn btn-outline-secondary" href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+              <li class="list-inline-item"><a class="btn btn-outline-secondary" href="#"><i class="fa-brands fa-github"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-sm-12" ><span class="text-secondary pt-1 float-md-end float-sm-start">Copyright &copy; 2023</span></div>
+          <div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
